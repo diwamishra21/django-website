@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/python_fevicon.png' %}"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact list</title>
+</head>
+<body>
+        <table class="table table-striped table-bordered table-sm">  
+                <thead class="thead-dark">  
+                <tr>  
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Message</th> 
+                    <th>Actions</th>  
+                </tr>  
+                </thead>  
+                <tbody>  
+            {% for contact in contact %}  
+                <tr>  
+                        <td>{{ contact.name }}</td>
+                        <td>{{ contact.email }}</td>
+                        <td>{{ contact.mobile }}</td>
+                        <td>{{ contact.message }}</td>
+                    <td>  
+                        <a href="/contact_edit/{{ contact.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>  
+                        <a href="/contact_destroy/{{ contact.id }}" onclick="return confirm('Are you sure?')">Delete</a>  
+                    </td>  
+                </tr>  
+            {% endfor %}  
+                </tbody>  
+   
+</body>
+</html>
