@@ -49,7 +49,3 @@ open cmd and goto project directory and type in cmd-
 for creating migration file- python manage.py makemigrations <app_name>
 for migrating - python manage.py migrate
 
-
-### saving data in database-
-http://www.learningaboutelectronics.com/Articles/How-to-save-data-from-a-form-to-a-database-table-in-Django.php
-youtube channel- Telusko(python videos)
