@@ -30,22 +30,21 @@ all main fiels are inside django_website directory as it is main project
 - for running server-  python manage.py runserver
 
 ### URLs-
-home- http://localhost:8000/
-contact- http://localhost:8000/contact
-login- http://localhost:8000/login
-register- http://localhost:8000/register
+- home- http://localhost:8000/
+- contact- http://localhost:8000/contact
+- login- http://localhost:8000/login
+- register- http://localhost:8000/register
 
 ### admin- http://localhost:8000/admin
-user- admin
-pass- 1234
+- user- admin
+- pass- 1234
 
 ### postgres account-
-user- postgres
-pass- 1234
+- user- postgres
+- pass- 1234
 
 ### Migrations-
-create a ModelClass in models.py with column description
-open cmd and goto project directory and type in cmd-
-for creating migration file- python manage.py makemigrations <app_name>
-for migrating - python manage.py migrate
-
+- create a ModelClass in models.py with column description
+- open cmd and goto project directory and type in cmd-
+- for creating migration file- python manage.py makemigrations <app_name>
+- for migrating - python manage.py migrate
